@@ -2,7 +2,7 @@
 //dividere in due array le zuccine che misurano  < 15 e  > 15
 //stampo a video quanto peano i due gruppi di zucchine
 
-let zucchine = [{
+const zucchine = [{
 
 
         origine: 'Nera di Milano',
@@ -97,14 +97,15 @@ let zucchine = [{
 
 ];
 
-let minore = [];
+let maggiore = [];
 
 for (zucchini of zucchine) {
-    let lunghezzaZucchine = zucchini;
-    //console.log(lunghezzaZucchine.lunghezza);
-    if (lunghezzaZucchine < 15) {
-        let minore = lunghezzaZucchine;
-        console.log(minore);
+
+
+    //console.log(zucchini.lunghezza);
+    if (zucchini.lunghezza > 15) {
+        maggiore.push(zucchini.lunghezza);
 
     }
+    console.log(maggiore.push());
 };
