@@ -83,7 +83,7 @@ let zucchine = [{
     },
     {
         origine: 'Ungheresi',
-        lunghezza: 3.4,
+        lunghezza: 2,
 
 
         peso: 45,
@@ -99,7 +99,8 @@ let zucchine = [{
 
 let maggiore = [];
 let minore = [];
-let peso = 0;
+let pesoTotaleCorte = 0;
+let pesoTotaleLunghe = 0;
 
 for (zucchini of zucchine) {
 
@@ -107,6 +108,14 @@ for (zucchini of zucchine) {
     //console.log(zucchini.lunghezza);
     if (zucchini.lunghezza < 15) {
         minore.push(zucchini.lunghezza);
+        pesoTotaleCorte += zucchini.peso;
+
+
+
+
+
+
+
 
 
 
@@ -114,6 +123,10 @@ for (zucchini of zucchine) {
 
     } else {
         maggiore.push(zucchini.lunghezza);
+        pesoTotaleLunghe += zucchini.peso;
+
+
+
 
     }
 
@@ -121,6 +134,10 @@ for (zucchini of zucchine) {
 
 
 };
-console.log("gruppo di zucchine < 15 cm  " + minore + zucchini.lunghezza);
 
-console.log("gruppo di zucchine > 15 cm  " + maggiore + zucchini.lunghezza);
+
+console.log("gruppo di zucchine > 15 cm  " + maggiore);
+console.log("gruppo di zucchine < 15 cm  " + minore);
+console.log('<------>');
+console.log('peso tot zucchine corte : ' + pesoTotaleCorte);
+console.log('peso tot zucchine lunghe : ' + pesoTotaleLunghe);
