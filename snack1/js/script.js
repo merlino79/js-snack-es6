@@ -95,6 +95,8 @@ let zucchine = [{
 
 ];
 console.log(zucchine);
+let pesoTotale = 0;
 for (zucchini of zucchine) {
-    console.log('peso zucchina ' + zucchini.peso);
-}
+    pesoTotale += zucchini.peso
+    console.log('il peso totale delle zucchine è : ' + pesoTotale.toFixed(2));
+};
