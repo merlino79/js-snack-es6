@@ -98,14 +98,19 @@ const zucchine = [{
 ];
 
 let maggiore = [];
+let minore = [];
 
 for (zucchini of zucchine) {
 
 
     //console.log(zucchini.lunghezza);
-    if (zucchini.lunghezza > 15) {
-        maggiore.push(zucchini.lunghezza);
+    if (zucchini.lunghezza < 15) {
+        maggiore.push(zucchini);
 
+
+    } else {
+        maggiore.push(zucchini);
     }
-    console.log(maggiore.push());
+
+
 };
