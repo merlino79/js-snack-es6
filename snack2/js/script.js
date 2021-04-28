@@ -2,25 +2,25 @@
 //dividere in due array le zuccine che misurano  < 15 e  > 15
 //stampo a video quanto peano i due gruppi di zucchine
 
-const zucchine = [{
+let zucchine = [{
 
 
         origine: 'Nera di Milano',
-        lunghezza: '20 cm',
+        lunghezza: 20,
         peso: 3.75,
 
     },
 
     {
         origine: 'Alberello',
-        lunghezza: '45 cm',
+        lunghezza: 45,
 
         peso: 15.70,
 
     },
     {
         origine: 'Tonda di Nizza',
-        lunghezza: "35 cm",
+        lunghezza: 35,
 
 
         peso: 25,
@@ -29,7 +29,7 @@ const zucchine = [{
     },
     {
         origine: 'Lunghe fiorentine',
-        lunghezza: '33 cm',
+        lunghezza: 12,
 
 
         peso: 22.08,
@@ -38,7 +38,7 @@ const zucchine = [{
     },
     {
         origine: 'Trombetta di_Albenga',
-        lunghezza: "5 cm",
+        lunghezza: 7,
 
 
         peso: 12.70,
@@ -47,7 +47,7 @@ const zucchine = [{
     },
     {
         origine: 'Trombetta di_Albenga',
-        lunghezza: "15 cm",
+        lunghezza: 35,
 
 
         peso: 7,
@@ -56,7 +56,7 @@ const zucchine = [{
     },
     {
         origine: 'Zucchino giallo Golden',
-        lunghezza: "15,7 cm",
+        lunghezza: 25,
 
 
         peso: 45,
@@ -65,7 +65,7 @@ const zucchine = [{
     },
     {
         origine: 'Italiane',
-        lunghezza: "22 cm",
+        lunghezza: 5,
 
 
         peso: 25.3,
@@ -74,7 +74,7 @@ const zucchine = [{
     },
     {
         origine: 'Francesi',
-        lunghezza: "28 cm",
+        lunghezza: 23,
 
 
         peso: 30.4,
@@ -83,7 +83,7 @@ const zucchine = [{
     },
     {
         origine: 'Ungheresi',
-        lunghezza: '45 cm',
+        lunghezza: 3.4,
 
 
         peso: 45,
@@ -99,18 +99,28 @@ const zucchine = [{
 
 let maggiore = [];
 let minore = [];
+let peso = 0;
 
 for (zucchini of zucchine) {
 
 
     //console.log(zucchini.lunghezza);
     if (zucchini.lunghezza < 15) {
-        maggiore.push(zucchini);
+        minore.push(zucchini.lunghezza);
+
+
+
 
 
     } else {
-        maggiore.push(zucchini);
+        maggiore.push(zucchini.lunghezza);
+
     }
 
 
+
+
 };
+console.log("gruppo di zucchine < 15 cm  " + minore + zucchini.lunghezza);
+
+console.log("gruppo di zucchine > 15 cm  " + maggiore + zucchini.lunghezza);
