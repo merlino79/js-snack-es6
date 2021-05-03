@@ -78,6 +78,7 @@ $(function() {
 
         $('#parcoMacchine ul').append(print(car.nome, car.modello, car.alimentazione));
 
+
     })
 
 
@@ -85,7 +86,17 @@ $(function() {
 
 
     const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
-    console.log(autoBenzina)
+    //console.log(autoBenzina)
+
+
+    autoBenzina.forEach((car) => {
+        console.log(car);
+        const { nome, modello, alimentazione } = car;
+        console.log(nome, modello, alimentazione, );
+        $('#autoBenzina ul').append(print(car.nome, car.modello, car.alimentazione));
+
+    })
+
 
 
 
