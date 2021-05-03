@@ -110,6 +110,13 @@ $(function() {
 });
 
 function print(nome, modello, alimentazione) {
-    console.log(nome, modello, alimentazione)
+    console.log(nome, modello, alimentazione);
+    let html = `
+    <li>
+            ${nome}
+    </li>
+
+    `;
+    return html
 
 }
