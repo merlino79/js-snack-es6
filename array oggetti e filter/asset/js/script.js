@@ -26,6 +26,16 @@ $(function() {
 
     ];
 
+    console.log(animals)
+
+    let mammiferi = animals.filter(function(mammifero) {
+        return mammifero.classe === 'mammiferi'
+
+    })
+    console.log(mammiferi)
+
+
+
 
 
 
