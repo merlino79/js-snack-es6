@@ -1,0 +1,1 @@
+//scrivi una funzione che fonda due array (aventi lo stesso numero di elementi) prendendo alternativamente da uno e l'altro
