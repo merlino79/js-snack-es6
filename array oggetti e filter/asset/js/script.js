@@ -28,22 +28,11 @@ $(function() {
 
     console.log(animals)
 
+    animals.forEach((index) => {
 
-    //  let mammiferi = animals.filter(function(mammifero) {
-    //         return mammifero.classe === 'mammiferi'
-
-    //     })
-    //     console.log(mammiferi)
-
-    const animaliFiltrati = animals.filter((animali) => {
-
-
-        if (animali.includes('mammiferi')) {
-            return true;
-        }
+        $('#animali ul').append(print(index.nome, index.famiglia, index.classe))
 
     })
-    console.log(animaliFiltrati)
 
 
 
@@ -55,14 +44,29 @@ $(function() {
 
 
 
+    function print(nomeAnimale, nomeFamiglia, nomeClasse, ) {
+        //console.log(nome);
+        let html =
+            `
+            <li>
+                ${'nome: ' + nomeAnimale }
+            </li>
+            <li>
+            ${'nome: ' + nomeFamiglia }
+            
+            
+
+            </li>
+            <li>
+            ${'nome: ' + nomeClasse }
+
+            </li>
+        
+        `;
+        return html
+
+    }
 
 
 
-
-
-
-
-
-
-
-});
+})

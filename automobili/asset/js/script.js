@@ -137,7 +137,7 @@ $(function() {
     function print(carnome, carmodello, caralimentazione) {
         //console.log(nome, modello, alimentazione);
         let html = `
-    <li>
+
              <li>
                 ${'nome: ' +carnome}
             </li>
@@ -147,7 +147,7 @@ $(function() {
             <li>
                 ${'alimentazione :' +caralimentazione}
             </li>
-    </li>
+    
 
     `;
         return html
