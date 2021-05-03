@@ -84,8 +84,8 @@ $(function() {
 
 
 
-    // const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
-    // console.log(autoBenzina)
+    const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
+    console.log(autoBenzina)
 
 
 
