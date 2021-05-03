@@ -28,11 +28,22 @@ $(function() {
 
     console.log(animals)
 
-    let mammiferi = animals.filter(function(mammifero) {
-        return mammifero.classe === 'mammiferi'
+
+    //  let mammiferi = animals.filter(function(mammifero) {
+    //         return mammifero.classe === 'mammiferi'
+
+    //     })
+    //     console.log(mammiferi)
+
+    const animaliFiltrati = animals.filter((animali) => {
+
+
+        if (animali.includes('mammiferi')) {
+            return true;
+        }
 
     })
-    console.log(mammiferi)
+    console.log(animaliFiltrati)
 
 
 
