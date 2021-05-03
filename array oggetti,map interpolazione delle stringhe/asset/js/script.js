@@ -38,15 +38,16 @@ $(function() {
     ];
     console.log(utenti)
 
-    // let guidare = utenti.map(utente => {
-    //     let text = " ";
-    //     const { nome, cognome } = utente;
-    //     if (utente.age > 17) {
-    //         text = `${nome} ${cognome} puoi guidare `
-    //     } else {
-    //         text = `${nome} ${cognome} non puoi guidare`
-    //     }
-    //     return text;
+
+    let guidare = utenti.map(utente => {
+        let text = " ";
+        const { nome, cognome } = utente;
+        if (utente.eta > 17) {
+            text = `${nome} ${cognome} puoi guidare `
+        } else {
+            text = `${nome} ${cognome} non puoi guidare`
+        }
+        return text;
 
 
 
@@ -59,8 +60,8 @@ $(function() {
 
 
 
-    // })
-    // console.log(guidare);
+    })
+    console.log(guidare);
 
     let guida = utenti.map((utente) => {
         if (utente.eta > 18) {
