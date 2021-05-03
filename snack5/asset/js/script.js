@@ -6,32 +6,21 @@
 
 
 $(function() {
-    const arr = ['pippo', 'PLUTO', 'Paperino', ]
-
-    //console.log(arr)
-
-    capitalize = arr.map((arry) => {
-            const capitalize = [];
-            return capitalize
-
-
-
-        })
-        //console.log(arry.capitalize)
 
 
 
 
 
-    // function capitalize(str) {
-    //     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
 
-    // }
-    function capitalizeFirstLetter(string, ) {
-        return string.charAt(0).toUpperCase() + string.substr(1).toLowerCase();
-    }
+    const str = "pippo PLUTO paperino"
 
-    console.log(capitalizeFirstLetter('pippo', )); // 
+    console.log(
+
+        str.split(' ')
+        .map(w => w[0].toUpperCase() + w.substr(1).toLowerCase())
+        .join(' ')
+
+    )
 
 
 
