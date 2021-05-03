@@ -76,8 +76,10 @@ $(function() {
 
     automobili.forEach((car) => {
 
-        print(car.nome, car.modello, car.alimentazione);
+        $('#parcoMacchine ul').append(print(car.nome, car.modello, car.alimentazione));
+
     })
+
 
 
 
@@ -100,18 +102,18 @@ $(function() {
 
 
 
-    function print(nome, modello, alimentazione) {
-        console.log(nome, modello, alimentazione);
+    function print(carnome, carmodello, caralimentazione) {
+        //console.log(nome, modello, alimentazione);
         let html = `
     <li>
              <li>
-                ${nome}
+                ${carnome}
             </li>
             <li>
-                ${modello}
+                ${carmodello}
             </li>
             <li>
-                ${alimentazione}
+                ${caralimentazione}
             </li>
     </li>
 
