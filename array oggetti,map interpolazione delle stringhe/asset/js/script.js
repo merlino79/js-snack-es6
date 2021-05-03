@@ -37,13 +37,20 @@ $(function() {
     ];
     console.log(utenti)
 
-    const guidare = utenti.filter((age) => {
-        //console.log(age)
-        if (age.eta > 18) {
-            return utenti.filter;
-
-
+    let guidare = utenti.map((utente) => {
+        let text = "";
+        const { nome, cognome } = utente;
+        if (utente.age < 18) {
+            text = `${nome} ${cognome} puoi guidare `
+        } else {
+            text = `${nome} ${cognome} non puoi guidare`
         }
+        return text;
+
+
+
+
+
 
 
 
@@ -52,7 +59,11 @@ $(function() {
 
 
     })
-    console.log(guidare)
+    console.log(guidare);
+
+
+
+
 
 
 
