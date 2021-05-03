@@ -20,7 +20,7 @@ $(function() {
         {
             nome: 'lancia',
             modello: 'thema',
-            alimentazione: 'elettrica',
+            alimentazione: 'gasolio',
 
         },
         {
@@ -68,30 +68,28 @@ $(function() {
         {
             nome: 'alfa romeo',
             modello: 'giulietta',
-            alimentazione: 'gpl',
+            alimentazione: 'gasolio',
 
         },
     ];
     //console.log(automobili);
 
-    const autoBenzina = automobili.filter((index) => {
+    automobili.forEach((car) => {
 
-        //console.log(index.alimentazione)
-        if (index.alimentazione.includes('benzina')) {
-            return true;
-        }
-
+        print(car.nome, car.modello, car.alimentazione)
     })
-    console.log(autoBenzina)
-    const autoGasolio = automobili.filter((index) => {
 
-        //console.log(index.alimentazione)
-        if (index.alimentazione.includes('gasolio')) {
-            return true;
-        }
 
-    })
-    console.log(autoGasolio)
+
+
+    // const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
+    // console.log(autoBenzina)
+
+
+
+
+
+
 
 
 
@@ -110,3 +108,8 @@ $(function() {
 
 
 });
+
+function print(nome, modello, alimentazione) {
+    console.log(nome, modello, alimentazione)
+
+}
