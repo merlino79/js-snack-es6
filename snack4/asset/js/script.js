@@ -74,13 +74,35 @@ $(function() {
     ];
     //console.log(automobili);
 
-    const autoBenzina = automobili.filter((car) => {
-        if (car === "benzina")
-            return true
+    const autoBenzina = automobili.filter((index) => {
+
+        //console.log(index.alimentazione)
+        if (index.alimentazione.includes('benzina')) {
+            return true;
+        }
 
     })
+    console.log(autoBenzina)
+    const autoGasolio = automobili.filter((index) => {
 
-    console.log(autoBenzina);
+        //console.log(index.alimentazione)
+        if (index.alimentazione.includes('gasolio')) {
+            return true;
+        }
+
+    })
+    console.log(autoGasolio)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
