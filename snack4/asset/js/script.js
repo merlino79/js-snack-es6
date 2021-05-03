@@ -86,15 +86,22 @@ $(function() {
 
 
     const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
-    //console.log(autoBenzina)
+    console.log(autoBenzina)
+    const autoGasolio = automobili.filter((car) => car.alimentazione === 'gasolio');
+    console.log(autoGasolio);
 
 
     autoBenzina.forEach((car) => {
-        console.log(car);
-        const { nome, modello, alimentazione } = car;
-        console.log(nome, modello, alimentazione, );
+        //console.log(car);
+        //const { nome, modello, alimentazione } = car;
+        //console.log(nome, modello, alimentazione, );
         $('#autoBenzina ul').append(print(car.nome, car.modello, car.alimentazione));
 
+    })
+
+    autoGasolio.forEach((car) => {
+        console.log(car);
+        $('#autoGasolio ul').append(print(car.nome, car.modello, car.alimentazione));
     })
 
 

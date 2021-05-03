@@ -8,3 +8,16 @@ body {
     background-color: #bd8216;
 }
 
+.acContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section ul {
+    list-style: none;
+    padding: 20px;
+}
+
+section h1 {
+    text-align: center;
+}
