@@ -6,9 +6,34 @@
 
 
 $(function() {
-    let arr = ['pippo', 'PLUTO', 'Paperino']
+    const arr = ['pippo', 'PLUTO', 'Paperino', ]
 
-    console.log(arr)
+    //console.log(arr)
+
+    capitalize = arr.map((arry) => {
+            const capitalize = [];
+            return capitalize
+
+
+
+        })
+        //console.log(arry.capitalize)
+
+
+
+
+
+    // function capitalize(str) {
+    //     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase()
+
+    // }
+    function capitalizeFirstLetter(string, ) {
+        return string.charAt(0).toUpperCase() + string.substr(1).toLowerCase();
+    }
+
+    console.log(capitalizeFirstLetter('pippo', )); // 
+
+
 
 
 
