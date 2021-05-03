@@ -32,7 +32,7 @@ $(function() {
         {
             nome: 'honda',
             modello: 'civic',
-            alimentazione: 'gasoloio',
+            alimentazione: 'gasolio',
 
         },
         {
@@ -86,9 +86,17 @@ $(function() {
 
 
     const autoBenzina = automobili.filter((car) => car.alimentazione === 'benzina');
+
     console.log(autoBenzina)
+
     const autoGasolio = automobili.filter((car) => car.alimentazione === 'gasolio');
+
+
     console.log(autoGasolio);
+
+    const autoDifferenti = automobili.filter((car) => car.alimentazione !== 'benzina' && car.alimentazione !== 'gasolio');
+
+    console.log(autoDifferenti);
 
 
     autoBenzina.forEach((car) => {
@@ -100,8 +108,14 @@ $(function() {
     })
 
     autoGasolio.forEach((car) => {
-        console.log(car);
+        //console.log(car);
         $('#autoGasolio ul').append(print(car.nome, car.modello, car.alimentazione));
+    })
+
+    autoDifferenti.forEach((car) => {
+        console.log(car)
+        $('#autoRimanenti ul').append(print(car.nome, car.modello, car.alimentazione));
+
     })
 
 

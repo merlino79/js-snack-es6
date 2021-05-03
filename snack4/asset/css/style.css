@@ -18,6 +18,10 @@ section ul {
     padding: 20px;
 }
 
+section li {
+    margin: 7px;
+}
+
 section h1 {
     text-align: center;
 }
