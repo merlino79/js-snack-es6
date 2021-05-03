@@ -107,13 +107,13 @@ $(function() {
         let html = `
     <li>
              <li>
-                ${carnome}
+                ${'nome: ' +carnome}
             </li>
             <li>
-                ${carmodello}
+                ${'modello: ' + carmodello};
             </li>
             <li>
-                ${caralimentazione}
+                ${'alimentazione :' +caralimentazione}
             </li>
     </li>
 
