@@ -76,7 +76,7 @@ $(function() {
 
     automobili.forEach((car) => {
 
-        print(car.nome, car.modello, car.alimentazione)
+        print(car.nome, car.modello, car.alimentazione);
     })
 
 
@@ -100,7 +100,25 @@ $(function() {
 
 
 
+    function print(nome, modello, alimentazione) {
+        console.log(nome, modello, alimentazione);
+        let html = `
+    <li>
+             <li>
+                ${nome}
+            </li>
+            <li>
+                ${modello}
+            </li>
+            <li>
+                ${alimentazione}
+            </li>
+    </li>
 
+    `;
+        return html
+
+    }
 
 
 
@@ -108,15 +126,3 @@ $(function() {
 
 
 });
-
-function print(nome, modello, alimentazione) {
-    console.log(nome, modello, alimentazione);
-    let html = `
-    <li>
-            ${nome}
-    </li>
-
-    `;
-    return html
-
-}
