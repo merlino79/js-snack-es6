@@ -34,32 +34,44 @@ $(function() {
             eta: 28,
 
         },
+
     ];
     console.log(utenti)
 
-    let guidare = utenti.map((utente) => {
-        let text = "";
-        const { nome, cognome } = utente;
-        if (utente.age < 18) {
-            text = `${nome} ${cognome} puoi guidare `
+    // let guidare = utenti.map(utente => {
+    //     let text = " ";
+    //     const { nome, cognome } = utente;
+    //     if (utente.age > 17) {
+    //         text = `${nome} ${cognome} puoi guidare `
+    //     } else {
+    //         text = `${nome} ${cognome} non puoi guidare`
+    //     }
+    //     return text;
+
+
+
+
+
+
+
+
+
+
+
+
+    // })
+    // console.log(guidare);
+
+    let guida = utenti.map((utente) => {
+        if (utente.eta > 18) {
+            return utente.nome + " puoi giudare"
         } else {
-            text = `${nome} ${cognome} non puoi guidare`
+            return utente.nome + " non puoi guidare"
         }
-        return text;
-
-
-
-
-
-
-
-
-
-
-
 
     })
-    console.log(guidare);
+    console.log(guida);
+
 
 
 
