@@ -28,12 +28,19 @@ $(function() {
 
     console.log(animals)
 
-    animals.forEach((index) => {
+    animals.forEach((animali) => {
 
-        $('#animali ul').append(print(index.nome, index.famiglia, index.classe))
+        $('#animali ul').append(print(animali.nome, animali.famiglia, animali.classe))
 
     })
 
+    const animaliFiltrati = animals.filter((animali) => animali.classe === 'mammiferi');
+    console.log(animaliFiltrati)
+
+    animaliFiltrati.forEach((animali) => {
+        $('#mammiferi ul').append(print(animali.nome, animali.famiglia, animali.classe))
+
+    })
 
 
 
@@ -52,13 +59,13 @@ $(function() {
                 ${'nome: ' + nomeAnimale }
             </li>
             <li>
-            ${'nome: ' + nomeFamiglia }
+            ${'famiglia: ' + nomeFamiglia }
             
             
 
             </li>
             <li>
-            ${'nome: ' + nomeClasse }
+            ${'classe: ' + nomeClasse }
 
             </li>
         
